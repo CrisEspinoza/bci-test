@@ -91,7 +91,7 @@ requerimientos planteados:
 Referencias:
 
 Diagrama de API:
-<span>![</span><span>BCI Api</span><span>]</span><span>(</span><span>[https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png](https://github.com/CrisEspinoza/bci-test/blob/main/images/api.png)</span><span>)</span>
+![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/api.png)
 
 Swagger: 
 ![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_BY6GxY/Screenshot 2023-08-11 at 13.40.07.png)
