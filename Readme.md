@@ -13,7 +13,7 @@ Descripción de ejecución:
 * Para poder ejecutar la aplicación de manera rapida, puede seguir los alguna de las siguientes opciones:
 1. MAVEN con H2:
     1. Paso numero 0, es revisar el archivo: application.properties, debe estar de la siguiente manera:
-       ![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_knRKsv/Screenshot 2023-08-11 at 14.11.59.png)
+       ![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/h2.png)
     2. Ejecutar dentro de la carpeta principal el siguiente comando:
         1. mvn clean install spring-boot:run
     3. Ya puede empezar a ocupar la aplicación dentro de los siguientes link:
@@ -22,9 +22,7 @@ Descripción de ejecución:
 
 2. Docker con Postgresql:
    1. Paso numero 0, es revisar el archivo: application.properties, debe estar de la siguiente manera:
-
-![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_m9XASX/Screenshot 2023-08-11 at 14.11.12.png)
-
+        ![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/docker.png)
    2. Primero se posiciona dentro del proyecto en la carpeta raiz
    3. Luego le da permisos al archivo de Docker para poder ejecutar un .sh, con el siguiente 
      comando: sudo chmod 777 Docker.sh 
@@ -86,17 +84,17 @@ con la finalidad de poder mostrar dos formas de poder abordar y estructurar los 
 Por ultimo, se deja a continuación una fotografia de la base de datos utilizada para poder solventar los 
 requerimientos planteados: 
 
-![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_BO9CaZ/Screenshot 2023-08-11 at 13.39.15.png)
+![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/db.png)
 
 Referencias:
 
 Diagrama de API:
 ![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/api.png)
 
-Swagger: 
-![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_BY6GxY/Screenshot 2023-08-11 at 13.40.07.png)
+Swagger:
+![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/swagger.png)
 
-Postman: 
-![](../../../../../var/folders/tc/3pk_qrp14r72v_6fpk0wvjmr0000gq/T/TemporaryItems/NSIRD_screencaptureui_6pGzZU/Screenshot 2023-08-11 at 13.40.44.png)
+Postman:
+![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/postman.png)
 
 Sin mas que agregar, se despide Cristian Espinoza. 
