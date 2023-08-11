@@ -97,4 +97,10 @@ Swagger:
 Postman:
 ![</span><span>BCI Api](https://github.com/CrisEspinoza/bci-test/blob/main/images/postman.png)
 
+
+*Importante*: La aplicación quedo andando en los siguiente link para que puedan ser probados de manera remota: 
+
+1. Swagger: http://ec2-3-133-145-170.us-east-2.compute.amazonaws.com/swagger-ui.html#/user-controller
+2. Url Base: http://ec2-3-133-145-170.us-east-2.compute.amazonaws.com
+
 Sin mas que agregar, se despide Cristian Espinoza. 
