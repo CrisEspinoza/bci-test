@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "4880ce67-a2ec-4511-9777-6fb1180f16e7",
+		"name": "BCI API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4068431"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"espinoza.cristian.silva1@gmail.com\",\n    \"password\": \"espinoza123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJjZmRkMTQ2Yi1lNWU5LTRmMjEtOGU5NC0yNGExOTJjOWZhMzciLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2QGFhM2dtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2OTE3NzI0MTcsImV4cCI6MTY5MTc3NDIxN30.q0Xi5MvT7CMkWJK_gCD7WD5HRPY_IK7e-lXAz0bYNmsTACgYp6CuCD70VOuZpmIgWXz8Flje6tHmv7r1_8CfwQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/user/espinoza.cristian.silvaa3@gmail.coma",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"espinoza.cristian.silvaa3@gmail.coma"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJjZGZlOGNkMy03NmNiLTRmZWItYThkMy05NzE0YjUzZjU1OWIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YTFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY5MTc2NzIxNCwiZXhwIjoxNjkxNzY5MDE0fQ.mRvTz1NOO4AXC01_eA-WP_tm2Qh4nAx7kgcHY0LBv3iXdVCqB3dj4s4mLJpfplNNgSaeHHGdyBgccoYUmkAlMg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"cristian eduardo\",\n    \"password\": \"espinoza123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/user/espinoza.cristian.silva1@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"espinoza.cristian.silva1@gmail.com"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"cristian\",\n    \"password\": \"123123123\",\n    \"email\": \"espinoza.cristian.silv@aa3gmail.com\",\n    \"phones\": [{\n        \"number\" : \"1\",\n        \"city\": \"1\",\n        \"country\": \"1\"\n    },{\n        \"number\" : \"2\",\n        \"city\": \"2\",\n        \"country\": \"2\"\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJjZGZlOGNkMy03NmNiLTRmZWItYThkMy05NzE0YjUzZjU1OWIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YTFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY5MTc2NzIxNCwiZXhwIjoxNjkxNzY5MDE0fQ.mRvTz1NOO4AXC01_eA-WP_tm2Qh4nAx7kgcHY0LBv3iXdVCqB3dj4s4mLJpfplNNgSaeHHGdyBgccoYUmkAlMg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/user/espinoza.cristian.silva1@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"espinoza.cristian.silva1@gmail.com"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phone",
+			"item": [
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyM2RiMzRkYS0wNDllLTRiMDctYjM3ZS1lYjY4ODY1MTM1ZmIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YWEzQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2OTE3NzAwMDQsImV4cCI6MTY5MTc3MTgwNH0.7TNTAbuH-qS21yeVAY7hnUvd_VJyeO-Gbz0UO5OzUSYlWBAPVLqhtqhn61WtsxwxuntdJdhxMRIr4-ewG1rxbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/phone/11231231",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"phone",
+								"11231231"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyM2RiMzRkYS0wNDllLTRiMDctYjM3ZS1lYjY4ODY1MTM1ZmIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YWEzQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2OTE3NzAwMDQsImV4cCI6MTY5MTc3MTgwNH0.7TNTAbuH-qS21yeVAY7hnUvd_VJyeO-Gbz0UO5OzUSYlWBAPVLqhtqhn61WtsxwxuntdJdhxMRIr4-ewG1rxbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"city\": \"2\",\n        \"country\": \"4\",\n        \"user\": \"espinoza.cristian.silvaa3@gmail.com\" \n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/phone/11231231",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"phone",
+								"11231231"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyM2RiMzRkYS0wNDllLTRiMDctYjM3ZS1lYjY4ODY1MTM1ZmIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YWEzQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2OTE3NzAwMDQsImV4cCI6MTY5MTc3MTgwNH0.7TNTAbuH-qS21yeVAY7hnUvd_VJyeO-Gbz0UO5OzUSYlWBAPVLqhtqhn61WtsxwxuntdJdhxMRIr4-ewG1rxbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"number\" : \"11231231\",\n        \"city\": \"2\",\n        \"country\": \"3\",\n        \"user\": \"espinoza.cristian.silvaa3@gmail.com\" \n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/phone",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"phone"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiIyM2RiMzRkYS0wNDllLTRiMDctYjM3ZS1lYjY4ODY1MTM1ZmIiLCJzdWIiOiJlc3Bpbm96YS5jcmlzdGlhbi5zaWx2YWEzQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE2OTE3NzAwMDQsImV4cCI6MTY5MTc3MTgwNH0.7TNTAbuH-qS21yeVAY7hnUvd_VJyeO-Gbz0UO5OzUSYlWBAPVLqhtqhn61WtsxwxuntdJdhxMRIr4-ewG1rxbQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test\",\n    \"password\": \"test2\",\n    \"email\": \"email@gmail.com\",\n    \"phones\": [{\n        \"number\" : \"1\",\n        \"city\": \"2\",\n        \"country\": \"3\"\n    }]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:80/api/v1/phone/11231231",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "80",
+							"path": [
+								"api",
+								"v1",
+								"phone",
+								"11231231"
+							]
+						},
+						"description": "Entrega todo los usuarios"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

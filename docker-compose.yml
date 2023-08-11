@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  backend:
+    image: "backend-bci"
+    container_name: api-bci-container
+    ports:
+      - "80:80"
+    networks:
+      - bci
+    depends_on:
+      - db_bci
+  db_bci:
+    container_name: db
+    image: postgres:12.1
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata #primera parte es el disco duro del servidor, segunda parte es donde se encuentra la data dentro del contenedor.
+    environment:
+      POSTGRES_DB: bci
+      POSTGRES_USER: bci
+      POSTGRES_PASSWORD: bci
+      PGDATA: /var/lib/postgresql/data/pgdata
+    networks:
+      - bci
+networks:
+  bci:
+    external: false
+    name: bci
